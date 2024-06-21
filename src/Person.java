@@ -40,6 +40,8 @@ public class Person {
 
 		// Sort the list of people by age using a lambda expression
 		//people.sort((p1, p2) -> Integer.compare(p1.getAge(), p2.getAge()));
+
+		// Sort the list of people by age using Comparator.comparing and a method reference
 		people.sort(Comparator.comparing(Person::getAge));
 		// Print the sorted list
 		System.out.println("Sorted by age:");
